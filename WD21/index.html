@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade Algorithm</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: aqua;
+        }
+        /* The specificity of this selector is 10 */
+        .yellow {
+            color: yellow;
+        }
+        /* The specificity of this selector is 1 + 10 =11 */
+        h1.yellow {
+            color: green;
+        }
+        /* The specificity of this selector is 10 */
+        .cred {
+            color: red;
+        }
+
+        /* .cred {
+            color: red !important;
+        } */
+        /* The specificity of this selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* Attribute selector */
+        /* The specificity of this selector is 10 */
+        [x=a]{
+           color: maroon;
+        }
+        
+        /* The specificity of this selector is 1(elemnt) + 10(class) + 10(class) + 10(attribute selector) + 10(pseudo selector) =41 */
+        a.harryclass.rohan-class[href] :hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>
