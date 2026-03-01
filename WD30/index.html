@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Varibles</title>
+    <style>
+        :root{
+            /* Global Vairble */
+            --color: rgb(246, 91, 117);
+            --seccolor: pink;
+            --defpad: 10px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* div :first-child {
+            background-color: rgb(208, 140, 140);
+        } */
+         .nav {
+            /* background-color: rgb(225, 103, 103); */
+            background-color: var(--color);
+         }
+         .container {
+            /* background-color: rgb(244, 208, 208); */
+            background-color: var(--seccolor);
+         }
+         ul{
+            display: flex;
+
+         }
+         ul li{
+            list-style: none;
+            padding: var(--defpad);
+            border: 3px solid var(--seccolor);
+         }
+         ul li:first-child {
+            /* Local varible */
+            --color: rgb(200, 246, 91);
+            background-color: var(--color, Green);
+         }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id in officiis reprehenderit unde, deleniti odit pariatur nisi numquam nostrum reiciendis hic ut earum quo porro ea debitis doloribus vel assumenda sequi. Veritatis, suscipit reiciendis consequuntur obcaecati voluptas aliquam? Sed reiciendis quisquam quibusdam officiis fugiat?
+    </div>
+</body>
+</html>
