@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 20vw;
+            height: 20vh;
+            border: 2px solid black;
+            /* overflow: scroll; */
+
+            /* only when overflow happens */
+            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            /* white-space: nowrap; */
+            /* text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, est qui? Atque quae rerum eaque commodi corporis accusamus aspernatur iste, illo est reiciendis ipsa perferendis quisquam! Adipisci consequatur tempore in debitis nam itaque quo, tempora culpa minima blanditiis molestias fugit ad voluptatum voluptatibus assumenda aperiam!</div>
+</body>
+</html>
