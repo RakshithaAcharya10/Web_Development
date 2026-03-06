@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Color Navbar</title>
+</head>
+<style>
+    :root{
+        --color: rgb(220, 37, 67);
+        --seccolor: rgb(239, 130, 148);
+        --thirdcolor: yellow;
+        --devpad: 10px;
+        --borcolors: rgb(19, 224, 19);
+    }
+    body{
+        background-color: var(--seccolor);
+
+    }
+    .nav ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        border: 3px solid var(--borcolors);
+        background-color: var(--color);
+        padding: var(--devpad);
+    }
+    li:first-child{
+        background-color: var(--seccolor);
+        width: 50px;
+        text-align: center;
+    }
+    ul li{
+        color: var(--thirdcolor);
+        padding-left: 10px;
+    }
+    .nav1 ul{
+        display: flex;
+        list-style: none;
+        padding: var(--devpad);
+        border: 3px solid var(--borcolors);
+        background-color: var(--color);
+    }
+    .container p{
+        background-color: var(--thirdcolor);
+        border:2px solid var(--borcolors);
+        padding: var(--devpad);
+        text-align: justify;
+    }
+    .container1 p{
+        background-color: var(--thirdcolor);
+        border: 2px solid var(--borcolors);
+        padding: var(--devpad);
+        text-align: justify;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam debitis mollitia autem neque tenetur deserunt
+            nulla vero eveniet cumque aspernatur id minus quae a, possimus cum incidunt nihil delectus architecto error
+            accusamus quasi eum odit ipsam. Iste, molestiae qui veritatis suscipit nemo vero expedita eius.</p>
+    </div>
+    <div class="nav1">
+        <ul>
+            <li>Submit</li>
+            <li>Edit</li>
+        </ul>
+    </div>
+    <div class="container1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam debitis mollitia autem neque tenetur deserunt
+            nulla vero eveniet cumque aspernatur id minus quae a, possimus cum incidunt nihil delectus architecto error
+            accusamus quasi eum odit ipsam. Iste, molestiae qui veritatis suscipit nemo vero expedita eius.</p>
+    </div>
+</body>
+
+</html>
